@@ -6,6 +6,9 @@ After cloning the repository, install the PHP and frontend dependencies:
 
 ```bash
 composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
 npm install && npm run build
 ```
 
